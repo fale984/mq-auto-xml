@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTest.XmlReader", "AutomatedTest.XmlReader\AutomatedTest.XmlReader.csproj", "{52421D17-4FF7-4445-AD94-3113CA103BF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {825105A0-5978-4D43-8642-61F0D1D24596}
+	EndGlobalSection
+EndGlobal
