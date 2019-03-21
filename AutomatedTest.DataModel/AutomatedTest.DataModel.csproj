@@ -51,6 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutomatedTestContext.cs" />
+    <Compile Include="Migrations\201903212044237_InitialCreate.cs" />
+    <Compile Include="Migrations\201903212044237_InitialCreate.Designer.cs">
+      <DependentUpon>201903212044237_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCase.cs" />
     <Compile Include="TestRun.cs" />
@@ -58,6 +63,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903212044237_InitialCreate.resx">
+      <DependentUpon>201903212044237_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

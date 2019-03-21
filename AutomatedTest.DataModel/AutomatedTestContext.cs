@@ -11,6 +11,10 @@ namespace AutomatedTest.DataModel
         {
         }
 
+        public AutomatedTestContext(string connection) : base(connection)
+        {
+        }
+
         public DbSet<TestRun> TestRuns { get; set; }
 
         public DbSet<TestCase> TestCases { get; set; }
@@ -18,6 +22,8 @@ namespace AutomatedTest.DataModel
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<TestRun>().ToTable("TestRun");
+            modelBuilder.Entity<TestCase>().ToTable("TestCase");
         }
     }
 }
