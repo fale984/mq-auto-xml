@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTest.XmlReader", "AutomatedTest.XmlReader\AutomatedTest.XmlReader.csproj", "{52421D17-4FF7-4445-AD94-3113CA103BF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTest.DataModel", "AutomatedTest.DataModel\AutomatedTest.DataModel.csproj", "{F736B866-597D-4178-8E79-01EB794203EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTest.FileProcessing", "AutomatedTest.FileProcessing\AutomatedTest.FileProcessing.csproj", "{F477C8E0-6A3F-4CB6-AC3F-5803B4265D65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52421D17-4FF7-4445-AD94-3113CA103BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F736B866-597D-4178-8E79-01EB794203EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F736B866-597D-4178-8E79-01EB794203EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F736B866-597D-4178-8E79-01EB794203EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F736B866-597D-4178-8E79-01EB794203EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F477C8E0-6A3F-4CB6-AC3F-5803B4265D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F477C8E0-6A3F-4CB6-AC3F-5803B4265D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F477C8E0-6A3F-4CB6-AC3F-5803B4265D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F477C8E0-6A3F-4CB6-AC3F-5803B4265D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
