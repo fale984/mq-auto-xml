@@ -1,10 +1,6 @@
 ﻿namespace AutomatedTest.DataModel
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class TestCase
     {
@@ -31,5 +27,10 @@
         public Guid TestRunId { get; set; }
 
         public virtual TestRun TestRun { get; set; }
+
+        public TestCase()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

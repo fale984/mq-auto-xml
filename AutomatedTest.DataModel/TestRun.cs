@@ -2,9 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class TestRun
     {
@@ -31,5 +28,10 @@
         public bool? FalseFailure { get; set; }
 
         public ICollection<TestCase> TestCases { get; set; }
+
+        public TestRun()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
