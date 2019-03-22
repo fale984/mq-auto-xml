@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="46" result="Failed" total="46" passed="40" failed="5" inconclusive="1" skipped="0" asserts="136" engine-version="3.7.0.0" clr-version="4.0.30319.42000" start-time="2019-03-21 01:15:02Z" end-time="2019-03-21 01:23:23Z" duration="500.737679">
+  <command-line><![CDATA[nunit3-console.exe  "C:\TestRuns\tests\DataArk.Automation.Tests.dll" --params:Browser="Chrome" --result=C:\TestRuns\TestResults\Result_Chrome_20190320-211501.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1064" name="DataArk.Automation.Tests.dll" fullname="DataArk.Automation.Tests.dll" runstate="Runnable" testcasecount="46" result="Failed" site="Child" start-time="2019-03-21 01:15:03Z" end-time="2019-03-21 01:23:22Z" duration="498.972506" total="46" passed="40" failed="5" warnings="0" inconclusive="1" skipped="0" asserts="136">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\WINDOWS\system32" machine-name="DEVCLIENT1" user="buildworker" user-domain="MEDIQUANT" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\WINDOWS\system32" />
+      <setting name="TestParametersDictionary" value="[Browser, Chrome]">
+        <item key="Browser" value="Chrome" />
+      </setting>
+      <setting name="TestParameters" value="Browser=Chrome" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="15036" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1065" name="DataArk" fullname="DataArk" runstate="Runnable" testcasecount="46" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.944161" total="46" passed="40" failed="5" warnings="0" inconclusive="1" skipped="0" asserts="136">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1066" name="Automation" fullname="DataArk.Automation" runstate="Runnable" testcasecount="46" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943397" total="46" passed="40" failed="5" warnings="0" inconclusive="1" skipped="0" asserts="136">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1067" name="Tests" fullname="DataArk.Automation.Tests" runstate="Runnable" testcasecount="46" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943381" total="46" passed="40" failed="5" warnings="0" inconclusive="1" skipped="0" asserts="136">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="0-1073" name="HappyPaths" fullname="DataArk.Automation.Tests.HappyPaths" runstate="Runnable" testcasecount="23" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:20:48Z" duration="343.999523" total="23" passed="17" failed="5" warnings="0" inconclusive="1" skipped="0" asserts="68">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestSuite" id="0-1077" name="AmyAdministrator" fullname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:15:34Z" duration="30.311817" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+              <test-suite type="TestFixture" id="0-1054" name="LoginTestFixture" fullname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.LoginTestFixture" classname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.LoginTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:15:13Z" duration="9.672981" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+                <test-case id="0-1055" name="AmyLogsIn" fullname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.LoginTestFixture.AmyLogsIn" methodname="AmyLogsIn" classname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.LoginTestFixture" runstate="Runnable" seed="396174535" result="Passed" start-time="2019-03-21 01:15:08Z" end-time="2019-03-21 01:15:13Z" duration="4.654967" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1056" name="XssTests" fullname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.XssTests" classname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.XssTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:15:13Z" end-time="2019-03-21 01:15:34Z" duration="20.623176" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+                <test-case id="0-1057" name="Xss_Announcements" fullname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.XssTests.Xss_Announcements" methodname="Xss_Announcements" classname="DataArk.Automation.Tests.HappyPaths.AmyAdministrator.XssTests" runstate="Runnable" seed="277892548" result="Passed" start-time="2019-03-21 01:15:17Z" end-time="2019-03-21 01:15:34Z" duration="17.021824" asserts="3">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1078" name="IrwinRosen" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:15:57Z" duration="53.028511" total="3" passed="1" failed="1" warnings="0" inconclusive="1" skipped="0" asserts="3">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="0-1058" name="BreakTheGlassTests" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.BreakTheGlassTests" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.BreakTheGlassTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-03-21 01:15:34Z" end-time="2019-03-21 01:15:45Z" duration="11.614932" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1059" name="BreakTheGlass" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.BreakTheGlassTests.BreakTheGlass" methodname="BreakTheGlass" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.BreakTheGlassTests" runstate="Runnable" seed="1015071065" result="Failed" label="Error" start-time="2019-03-21 01:15:37Z" end-time="2019-03-21 01:15:45Z" duration="8.012674" asserts="2">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)]]></message>
+                    <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.EventFiringWebElement.FindElements(By by)
+   at MediQuant.Automation.Adapters.Selenium.SeleniumWebElementAdapter.FindChildElementsByHtmlTagName(String htmlTagName) in D:\Agent\_work\2\s\Projects\MediQuant.Automation.Adapters.Selenium\SeleniumWebElementAdapter.cs:line 152
+   at MediQuant.Automation.PageObjects.Controls.Grid.GetTableBodyElementAdapter() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 142
+   at MediQuant.Automation.PageObjects.Controls.Grid.get_Rows() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 0
+   at MediQuant.Automation.PageObjects.Controls.Grid.HasResults() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 61
+   at MediQuant.Automation.WaitCondition.Execute() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\WaitCondition.cs:line 32
+   at DataArk.Automation.Tests.HappyPaths.IrwinRosen.BreakTheGlassTests.BreakTheGlass() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\IrwinRosen\BreakTheGlassTests.cs:line 64]]></stack-trace>
+                  </failure>
+                  <attachments>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\BreakTheGlass_Chrome_2019_03_20_21_15_44.png</filePath>
+                    </attachment>
+                  </attachments>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1060" name="ClinicalRecordsTests" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.ClinicalRecordsTests" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.ClinicalRecordsTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:15:45Z" end-time="2019-03-21 01:15:49Z" duration="3.660811" total="1" passed="0" failed="0" warnings="0" inconclusive="1" skipped="0" asserts="0">
+                <test-case id="0-1061" name="ViewClinicalRecords" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.ClinicalRecordsTests.ViewClinicalRecords" methodname="ViewClinicalRecords" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.ClinicalRecordsTests" runstate="Runnable" seed="1573106994" result="Inconclusive" start-time="2019-03-21 01:15:49Z" end-time="2019-03-21 01:15:49Z" duration="0.049108" asserts="0">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <reason>
+                    <message><![CDATA[in progress]]></message>
+                  </reason>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1062" name="LoginTestFixture" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.LoginTestFixture" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.LoginTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:15:49Z" end-time="2019-03-21 01:15:57Z" duration="7.440738" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+                <test-case id="0-1063" name="IrwinLogsIn" fullname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.LoginTestFixture.IrwinLogsIn" methodname="IrwinLogsIn" classname="DataArk.Automation.Tests.HappyPaths.IrwinRosen.LoginTestFixture" runstate="Runnable" seed="688136423" result="Passed" start-time="2019-03-21 01:15:53Z" end-time="2019-03-21 01:15:56Z" duration="3.870529" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1076" name="MartyMcRecords" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:17:19Z" duration="134.995016" total="5" passed="4" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="7">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="0-1046" name="ClinicalRecordsTests" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-03-21 01:15:57Z" end-time="2019-03-21 01:16:30Z" duration="33.335058" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+                <test-case id="0-1047" name="ClinicalRecords_AddNote" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests.ClinicalRecords_AddNote" methodname="ClinicalRecords_AddNote" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests" runstate="Runnable" seed="650586161" result="Passed" start-time="2019-03-21 01:16:00Z" end-time="2019-03-21 01:16:16Z" duration="15.970542" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1048" name="ClinicalRecords_ChangeStatus" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests.ClinicalRecords_ChangeStatus" methodname="ClinicalRecords_ChangeStatus" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.ClinicalRecordsTests" runstate="Runnable" seed="1819414457" result="Passed" start-time="2019-03-21 01:16:16Z" end-time="2019-03-21 01:16:30Z" duration="13.752596" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1052" name="LoginTestFixture" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.LoginTestFixture" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.LoginTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:16:30Z" end-time="2019-03-21 01:16:38Z" duration="7.735723" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+                <test-case id="0-1053" name="MartyLogsIn" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.LoginTestFixture.MartyLogsIn" methodname="MartyLogsIn" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.LoginTestFixture" runstate="Runnable" seed="1277453883" result="Passed" start-time="2019-03-21 01:16:33Z" end-time="2019-03-21 01:16:37Z" duration="4.110092" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1049" name="RoiTests" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2019-03-21 01:16:38Z" end-time="2019-03-21 01:17:19Z" duration="40.895492" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="4">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1050" name="Roi_ManageRequests" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests.Roi_ManageRequests" methodname="Roi_ManageRequests" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests" runstate="Runnable" seed="240949660" result="Passed" start-time="2019-03-21 01:16:41Z" end-time="2019-03-21 01:17:03Z" duration="21.650848" asserts="2">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1051" name="Roi_NewRequest" fullname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests.Roi_NewRequest" methodname="Roi_NewRequest" classname="DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests" runstate="Runnable" seed="652998933" result="Failed" label="Error" start-time="2019-03-21 01:17:03Z" end-time="2019-03-21 01:17:18Z" duration="15.680577" asserts="2">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OpenQA.Selenium.WebDriverException : unknown error: Element <td class="gridCheckbox">...</td> is not clickable at point (31, 407). Other element would receive the click: <div class="overlayGrid" id="roiRecordsTabsGridGridOverlay" style="display: block; z-index: 1;"></div>
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)]]></message>
+                    <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.EventFiringWebElement.Click()
+   at MediQuant.Automation.Adapters.Selenium.SeleniumWebElementAdapter.Click() in D:\Agent\_work\2\s\Projects\MediQuant.Automation.Adapters.Selenium\SeleniumWebElementAdapter.cs:line 110
+   at DataArk.Automation.Tests.HappyPaths.MartyMcRecords.RoiTests.Roi_NewRequest() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\MartyMcRecords\RoiTests.cs:line 152]]></stack-trace>
+                  </failure>
+                  <attachments>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\Roi_NewRequest_Chrome_2019_03_20_21_17_18.png</filePath>
+                    </attachment>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\Roi_NewRequest_Chrome_2019_03_20_21_17_18.png</filePath>
+                    </attachment>
+                  </attachments>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1075" name="RileyRevenue" fullname="DataArk.Automation.Tests.HappyPaths.RileyRevenue" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:17:48Z" duration="164.188042" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+              <test-suite type="TestFixture" id="0-1042" name="LoginTestFixture" fullname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.LoginTestFixture" classname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.LoginTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:17:19Z" end-time="2019-03-21 01:17:26Z" duration="7.529570" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <test-case id="0-1043" name="RileyLogsIn" fullname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.LoginTestFixture.RileyLogsIn" methodname="RileyLogsIn" classname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.LoginTestFixture" runstate="Runnable" seed="1483642859" result="Passed" start-time="2019-03-21 01:17:22Z" end-time="2019-03-21 01:17:26Z" duration="4.012271" asserts="0">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1044" name="TransactionReportTests" fullname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.TransactionReportTests" classname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.TransactionReportTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:17:26Z" end-time="2019-03-21 01:17:48Z" duration="21.663323" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+                <test-case id="0-1045" name="TransactionReport_CreateFavorite" fullname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.TransactionReportTests.TransactionReport_CreateFavorite" methodname="TransactionReport_CreateFavorite" classname="DataArk.Automation.Tests.HappyPaths.RileyRevenue.TransactionReportTests" runstate="Runnable" seed="667100201" result="Passed" start-time="2019-03-21 01:17:29Z" end-time="2019-03-21 01:17:47Z" duration="18.054269" asserts="5">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestSuite" id="0-1074" name="SuzyPoster" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:20:48Z" duration="343.999432" total="11" passed="8" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="49">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="0-1025" name="FindAccountTests" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2019-03-21 01:17:48Z" end-time="2019-03-21 01:18:18Z" duration="30.703333" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="6">
+                <test-case id="0-1026" name="FindAccount_WithAccountNumber" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests.FindAccount_WithAccountNumber" methodname="FindAccount_WithAccountNumber" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests" runstate="Runnable" seed="1064484049" result="Passed" start-time="2019-03-21 01:17:51Z" end-time="2019-03-21 01:18:04Z" duration="12.714357" asserts="3">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1027" name="FindAccount_WithPatientName" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests.FindAccount_WithPatientName" methodname="FindAccount_WithPatientName" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindAccountTests" runstate="Runnable" seed="261564149" result="Passed" start-time="2019-03-21 01:18:04Z" end-time="2019-03-21 01:18:18Z" duration="14.319364" asserts="3">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1028" name="FindPatientTests" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2019-03-21 01:18:18Z" end-time="2019-03-21 01:18:43Z" duration="25.038796" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
+                <test-case id="0-1029" name="FindPatient_Returns_NoResults_WithPatientMRNThatDoesntExist" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests.FindPatient_Returns_NoResults_WithPatientMRNThatDoesntExist" methodname="FindPatient_Returns_NoResults_WithPatientMRNThatDoesntExist" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" runstate="Runnable" seed="1340948963" result="Passed" start-time="2019-03-21 01:18:22Z" end-time="2019-03-21 01:18:27Z" duration="5.305869" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1030" name="FindPatient_Returns_Results_WithPatientLastName" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests.FindPatient_Returns_Results_WithPatientLastName" methodname="FindPatient_Returns_Results_WithPatientLastName" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" runstate="Runnable" seed="1542199887" result="Passed" start-time="2019-03-21 01:18:27Z" end-time="2019-03-21 01:18:33Z" duration="5.660350" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1031" name="FindPatient_Returns_Results_WithPatientMRN" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests.FindPatient_Returns_Results_WithPatientMRN" methodname="FindPatient_Returns_Results_WithPatientMRN" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" runstate="Runnable" seed="1306725884" result="Passed" start-time="2019-03-21 01:18:33Z" end-time="2019-03-21 01:18:38Z" duration="4.933220" asserts="1">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1032" name="FindPatient_StandardFindPatientWorkflow" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests.FindPatient_StandardFindPatientWorkflow" methodname="FindPatient_StandardFindPatientWorkflow" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.FindPatientTests" runstate="Runnable" seed="598332863" result="Passed" start-time="2019-03-21 01:18:38Z" end-time="2019-03-21 01:18:43Z" duration="5.446760" asserts="4">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1033" name="InfoPageTests" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2019-03-21 01:18:43Z" end-time="2019-03-21 01:19:46Z" duration="62.568057" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="27">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1034" name="InfoPage_SummaryTab" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests.InfoPage_SummaryTab" methodname="InfoPage_SummaryTab" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests" runstate="Runnable" seed="1996617210" result="Passed" start-time="2019-03-21 01:18:47Z" end-time="2019-03-21 01:19:18Z" duration="31.457389" asserts="24">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+                <test-case id="0-1035" name="InfoPage_TransactionsTab" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests.InfoPage_TransactionsTab" methodname="InfoPage_TransactionsTab" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests" runstate="Runnable" seed="1005796939" result="Failed" start-time="2019-03-21 01:19:18Z" end-time="2019-03-21 01:19:46Z" duration="27.480978" asserts="3">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                    <stack-trace><![CDATA[   at DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests.InfoPage_TransactionsTab() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\SuzyPoster\InfoPageTests.cs:line 148
+]]></stack-trace>
+                  </failure>
+                  <assertions>
+                    <assertion result="Failed">
+                      <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                      <stack-trace><![CDATA[   at DataArk.Automation.Tests.HappyPaths.SuzyPoster.InfoPageTests.InfoPage_TransactionsTab() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\SuzyPoster\InfoPageTests.cs:line 148
+]]></stack-trace>
+                    </assertion>
+                  </assertions>
+                  <attachments>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\InfoPage_TransactionsTab_Chrome_2019_03_20_21_19_30.png</filePath>
+                    </attachment>
+                  </attachments>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1036" name="InstitutionalInsurancePostingTests" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalInsurancePostingTests" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalInsurancePostingTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-03-21 01:19:46Z" end-time="2019-03-21 01:20:06Z" duration="20.418219" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="3">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1037" name="InstitutionalInsurancePosting_Batch" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalInsurancePostingTests.InstitutionalInsurancePosting_Batch" methodname="InstitutionalInsurancePosting_Batch" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalInsurancePostingTests" runstate="Runnable" seed="1612854514" result="Failed" label="Error" start-time="2019-03-21 01:19:50Z" end-time="2019-03-21 01:20:06Z" duration="16.155413" asserts="3">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)]]></message>
+                    <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.EventFiringWebElement.FindElements(By by)
+   at MediQuant.Automation.Adapters.Selenium.SeleniumWebElementAdapter.FindChildElementsByHtmlTagName(String htmlTagName) in D:\Agent\_work\2\s\Projects\MediQuant.Automation.Adapters.Selenium\SeleniumWebElementAdapter.cs:line 152
+   at MediQuant.Automation.PageObjects.Controls.Grid.get_Rows() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 51
+   at MediQuant.Automation.PageObjects.Controls.Grid.HasResults() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 61
+   at MediQuant.Automation.WaitCondition.Execute() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\WaitCondition.cs:line 32
+   at DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalInsurancePostingTests.InstitutionalInsurancePosting_Batch() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\SuzyPoster\InstitutionalInsurancePostingTests.cs:line 153]]></stack-trace>
+                  </failure>
+                  <attachments>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\InstitutionalInsurancePosting_Batch_Chrome_2019_03_20_21_20_06.png</filePath>
+                    </attachment>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\InstitutionalInsurancePosting_Batch_Chrome_2019_03_20_21_20_06.png</filePath>
+                    </attachment>
+                  </attachments>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1038" name="InstitutionalSelfPayPostingTests" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalSelfPayPostingTests" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalSelfPayPostingTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2019-03-21 01:20:06Z" end-time="2019-03-21 01:20:40Z" duration="33.504362" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="6">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="0-1039" name="InstitutionalSelfPayPosting_NewBatch_DeleteBatch" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalSelfPayPostingTests.InstitutionalSelfPayPosting_NewBatch_DeleteBatch" methodname="InstitutionalSelfPayPosting_NewBatch_DeleteBatch" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalSelfPayPostingTests" runstate="Runnable" seed="558137251" result="Failed" label="Error" start-time="2019-03-21 01:20:10Z" end-time="2019-03-21 01:20:40Z" duration="29.802384" asserts="6">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                  <failure>
+                    <message><![CDATA[OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64)]]></message>
+                    <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Support.Events.EventFiringWebDriver.EventFiringWebElement.FindElements(By by)
+   at MediQuant.Automation.Adapters.Selenium.SeleniumWebElementAdapter.FindChildElementsByHtmlTagName(String htmlTagName) in D:\Agent\_work\2\s\Projects\MediQuant.Automation.Adapters.Selenium\SeleniumWebElementAdapter.cs:line 152
+   at MediQuant.Automation.PageObjects.Controls.Grid.get_Rows() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 51
+   at MediQuant.Automation.PageObjects.Controls.Grid.HasResults() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\PageObjects\Controls\Grid.cs:line 61
+   at MediQuant.Automation.WaitCondition.Execute() in D:\Agent\_work\2\s\Projects\MediQuant.Automation\WaitCondition.cs:line 32
+   at DataArk.Automation.Tests.HappyPaths.SuzyPoster.InstitutionalSelfPayPostingTests.InstitutionalSelfPayPosting_NewBatch_DeleteBatch() in D:\Agent\_work\2\s\Tests\Automated UI\DataArk.Automation.Tests\HappyPaths\SuzyPoster\InstitutionalSelfPayPostingTests.cs:line 191]]></stack-trace>
+                  </failure>
+                  <attachments>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\InstitutionalSelfPayPosting_NewBatch_DeleteBatch_Chrome_2019_03_20_21_20_30.png</filePath>
+                    </attachment>
+                    <attachment>
+                      <filePath>C:\TestRuns\tests\\Screenshots\InstitutionalSelfPayPosting_NewBatch_DeleteBatch_Chrome_2019_03_20_21_20_39.png</filePath>
+                    </attachment>
+                  </attachments>
+                </test-case>
+              </test-suite>
+              <test-suite type="TestFixture" id="0-1040" name="LoginTestFixture" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.LoginTestFixture" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.LoginTestFixture" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-03-21 01:20:40Z" end-time="2019-03-21 01:20:48Z" duration="7.578302" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+                <test-case id="0-1041" name="SuzyLogsIn" fullname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.LoginTestFixture.SuzyLogsIn" methodname="SuzyLogsIn" classname="DataArk.Automation.Tests.HappyPaths.SuzyPoster.LoginTestFixture" runstate="Runnable" seed="798278317" result="Passed" start-time="2019-03-21 01:20:43Z" end-time="2019-03-21 01:20:47Z" duration="3.860959" asserts="0">
+                  <properties>
+                    <property name="Category" value="Automated UI" />
+                    <property name="Category" value="Happy Paths" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="0-1070" name="PA" fullname="DataArk.Automation.Tests.PA" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943236" total="23" passed="23" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="68">
+            <test-suite type="TestSuite" id="0-1071" name="Reporting" fullname="DataArk.Automation.Tests.PA.Reporting" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943226" total="23" passed="23" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="68">
+              <test-suite type="TestSuite" id="0-1072" name="Batch" fullname="DataArk.Automation.Tests.PA.Reporting.Batch" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943213" total="23" passed="23" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="68">
+                <test-suite type="TestFixture" id="0-1001" name="BatchReportTests" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2019-03-21 01:20:48Z" end-time="2019-03-21 01:23:22Z" duration="154.943699" total="23" passed="23" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="68">
+                  <test-case id="0-1002" name="BatchReport_Closed_Processed_Batches_Expanded_Analyze_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Closed_Processed_Batches_Expanded_Analyze_Report" methodname="BatchReport_Closed_Processed_Batches_Expanded_Analyze_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1312859583" result="Passed" start-time="2019-03-21 01:20:51Z" end-time="2019-03-21 01:20:59Z" duration="8.330436" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1003" name="BatchReport_Closed_Processed_Batches_Report_Controls_Are_Not_Visible" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Closed_Processed_Batches_Report_Controls_Are_Not_Visible" methodname="BatchReport_Closed_Processed_Batches_Report_Controls_Are_Not_Visible" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="55688223" result="Passed" start-time="2019-03-21 01:20:59Z" end-time="2019-03-21 01:21:04Z" duration="4.570233" asserts="3">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1004" name="BatchReport_Closed_Processed_Batches_Report_Controls_Are_Visible" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Closed_Processed_Batches_Report_Controls_Are_Visible" methodname="BatchReport_Closed_Processed_Batches_Report_Controls_Are_Visible" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="323360550" result="Passed" start-time="2019-03-21 01:21:04Z" end-time="2019-03-21 01:21:09Z" duration="4.763572" asserts="3">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1005" name="BatchReport_Closed_Processed_Batches_View_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Closed_Processed_Batches_View_Report" methodname="BatchReport_Closed_Processed_Batches_View_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="810364250" result="Passed" start-time="2019-03-21 01:21:09Z" end-time="2019-03-21 01:21:16Z" duration="7.841632" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1006" name="BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsExpanded" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsExpanded" methodname="BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsExpanded" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1559370525" result="Passed" start-time="2019-03-21 01:21:16Z" end-time="2019-03-21 01:21:21Z" duration="4.443066" asserts="1">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1007" name="BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" methodname="BatchReport_FacilityDropDown_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="2128899082" result="Passed" start-time="2019-03-21 01:21:21Z" end-time="2019-03-21 01:21:25Z" duration="4.516288" asserts="1">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1008" name="BatchReport_Individual_Batch_Report_Expanded_Analyze_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Expanded_Analyze_Report" methodname="BatchReport_Individual_Batch_Report_Expanded_Analyze_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1808792609" result="Passed" start-time="2019-03-21 01:21:25Z" end-time="2019-03-21 01:21:36Z" duration="11.016996" asserts="4">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1009" name="BatchReport_Individual_Batch_Report_Expanded_Report_Specific_Controls_Are_Visible" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Expanded_Report_Specific_Controls_Are_Visible" methodname="BatchReport_Individual_Batch_Report_Expanded_Report_Specific_Controls_Are_Visible" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1435823679" result="Passed" start-time="2019-03-21 01:21:36Z" end-time="2019-03-21 01:21:41Z" duration="4.638057" asserts="8">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1010" name="BatchReport_Individual_Batch_Report_Expanded_View_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Expanded_View_Report" methodname="BatchReport_Individual_Batch_Report_Expanded_View_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="441225347" result="Passed" start-time="2019-03-21 01:21:41Z" end-time="2019-03-21 01:21:53Z" duration="12.077866" asserts="4">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1011" name="BatchReport_Individual_Batch_Report_Grid_HasResults_ReturnsTrue_WhenThereAreResults" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Grid_HasResults_ReturnsTrue_WhenThereAreResults" methodname="BatchReport_Individual_Batch_Report_Grid_HasResults_ReturnsTrue_WhenThereAreResults" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="93926967" result="Passed" start-time="2019-03-21 01:21:53Z" end-time="2019-03-21 01:22:00Z" duration="6.861747" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1012" name="BatchReport_Individual_Batch_Report_Grid_Is_Empty" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Grid_Is_Empty" methodname="BatchReport_Individual_Batch_Report_Grid_Is_Empty" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="371065035" result="Passed" start-time="2019-03-21 01:22:00Z" end-time="2019-03-21 01:22:05Z" duration="5.124824" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1013" name="BatchReport_Individual_Batch_Report_Not_Report_Specific_Controls_Are_Not_Visible" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Not_Report_Specific_Controls_Are_Not_Visible" methodname="BatchReport_Individual_Batch_Report_Not_Report_Specific_Controls_Are_Not_Visible" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1923011395" result="Passed" start-time="2019-03-21 01:22:05Z" end-time="2019-03-21 01:22:09Z" duration="4.314612" asserts="7">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1014" name="BatchReport_Individual_Batch_Report_Report_Specific_Controls_Are_Visible" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Report_Specific_Controls_Are_Visible" methodname="BatchReport_Individual_Batch_Report_Report_Specific_Controls_Are_Visible" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="476526932" result="Passed" start-time="2019-03-21 01:22:09Z" end-time="2019-03-21 01:22:14Z" duration="4.590577" asserts="7">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1015" name="BatchReport_Individual_Batch_Report_Reset_Criteria_Clears_All_Controls" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_Reset_Criteria_Clears_All_Controls" methodname="BatchReport_Individual_Batch_Report_Reset_Criteria_Clears_All_Controls" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="959340359" result="Passed" start-time="2019-03-21 01:22:14Z" end-time="2019-03-21 01:22:20Z" duration="6.439402" asserts="5">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1016" name="BatchReport_Individual_Batch_Report_ReturnsExpected_SelectedRow_WhenRowIsOnFirstPage" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Individual_Batch_Report_ReturnsExpected_SelectedRow_WhenRowIsOnFirstPage" methodname="BatchReport_Individual_Batch_Report_ReturnsExpected_SelectedRow_WhenRowIsOnFirstPage" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1664706374" result="Passed" start-time="2019-03-21 01:22:20Z" end-time="2019-03-21 01:22:29Z" duration="8.534145" asserts="3">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1017" name="BatchReport_Open_UnPosted_Batches_Expanded_Analyze_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Open_UnPosted_Batches_Expanded_Analyze_Report" methodname="BatchReport_Open_UnPosted_Batches_Expanded_Analyze_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="2081750773" result="Passed" start-time="2019-03-21 01:22:29Z" end-time="2019-03-21 01:22:37Z" duration="7.918710" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1018" name="BatchReport_Open_UnPosted_Batches_View_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Open_UnPosted_Batches_View_Report" methodname="BatchReport_Open_UnPosted_Batches_View_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1645764570" result="Passed" start-time="2019-03-21 01:22:37Z" end-time="2019-03-21 01:22:47Z" duration="10.182444" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1019" name="BatchReport_Page_Is_Found" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Page_Is_Found" methodname="BatchReport_Page_Is_Found" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1222924383" result="Passed" start-time="2019-03-21 01:22:47Z" end-time="2019-03-21 01:22:52Z" duration="4.448069" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1020" name="BatchReport_Pending_Posted_Batches_Expanded_Analyze_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Pending_Posted_Batches_Expanded_Analyze_Report" methodname="BatchReport_Pending_Posted_Batches_Expanded_Analyze_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="396004916" result="Passed" start-time="2019-03-21 01:22:52Z" end-time="2019-03-21 01:22:59Z" duration="7.768452" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1021" name="BatchReport_Pending_Posted_Batches_View_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Pending_Posted_Batches_View_Report" methodname="BatchReport_Pending_Posted_Batches_View_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="2141353090" result="Passed" start-time="2019-03-21 01:22:59Z" end-time="2019-03-21 01:23:08Z" duration="8.660661" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1022" name="BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsExpanded" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsExpanded" methodname="BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsExpanded" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="424155653" result="Passed" start-time="2019-03-21 01:23:08Z" end-time="2019-03-21 01:23:13Z" duration="4.801791" asserts="1">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1023" name="BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" methodname="BatchReport_ReportTypeDropDownList_UnpostedBatches_Click_NavigatesToExpectedPage_WhenListIsNotExpanded" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1611447406" result="Passed" start-time="2019-03-21 01:23:13Z" end-time="2019-03-21 01:23:18Z" duration="4.816603" asserts="1">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                  <test-case id="0-1024" name="BatchReport_Save_As_Favorite_Lightbox_Is_Displayed_When_Saving_A_Pending_Posted_Batch_Report" fullname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests.BatchReport_Save_As_Favorite_Lightbox_Is_Displayed_When_Saving_A_Pending_Posted_Batch_Report" methodname="BatchReport_Save_As_Favorite_Lightbox_Is_Displayed_When_Saving_A_Pending_Posted_Batch_Report" classname="DataArk.Automation.Tests.PA.Reporting.Batch.BatchReportTests" runstate="Runnable" seed="1951607008" result="Passed" start-time="2019-03-21 01:23:18Z" end-time="2019-03-21 01:23:22Z" duration="4.659247" asserts="2">
+                    <properties>
+                      <property name="Category" value="UI" />
+                      <property name="Category" value="DataArk.PA.Reporting.Batch" />
+                    </properties>
+                  </test-case>
+                </test-suite>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestSuite" id="0-1068" name="Screens" fullname="DataArk.Automation.Tests.Screens" runstate="Runnable" testcasecount="0" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943276" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestSuite" id="0-1069" name="Shared" fullname="DataArk.Automation.Tests.Screens.Shared" runstate="Runnable" testcasecount="0" result="Passed" start-time="2019-03-21 01:15:04Z" end-time="2019-03-21 01:23:22Z" duration="498.943260" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+              <test-suite type="TestFixture" id="0-1000" name="FindTests" fullname="DataArk.Automation.Tests.Screens.Shared.FindTests" classname="DataArk.Automation.Tests.Screens.Shared.FindTests" runstate="Runnable" testcasecount="0" result="Passed" start-time="2019-03-21 01:23:22Z" end-time="2019-03-21 01:23:22Z" duration="0.000005" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0" />
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
