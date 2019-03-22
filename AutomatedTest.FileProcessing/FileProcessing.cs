@@ -1,48 +1,66 @@
 ﻿namespace AutomatedTest.FileProcessing
 {
+    using AutomatedTest.DataModel;
     using System;
-    using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
     using System.Xml.Linq;
-    using AutomatedTest.DataModel;
 
     public class FileProcessing
     {
-        public void ProccessFile(string filePath)
+        public TestRun ProccessFile(string filePath)
         {
-            XElement document = XElement.Load($"{filePath}");
+            var testRunSourceFilePath = new FileInfo(filePath);
+
+            XElement document = XElement.Load(filePath);
             TestRun testRun = BuildTestRunObjectFromDucument(document);
-            var testRunId = document.FirstAttribute.Value;
+
+            testRun.TestRunSourceFilePath = testRunSourceFilePath.ToString();
+            testRun.TestRunDestinationFilePath = $"\\\\devclient1\\c$\\AutomatedTestingFiles\\{testRun.Id}_{testRunSourceFilePath.Name}";
+
+            var context = new AutomatedTestContext();
+            context.TestRuns.Add(testRun);
+            context.SaveChanges();
+
+            return testRun;
         }
 
         private TestRun BuildTestRunObjectFromDucument(XElement document)
         {
             var testSuite = document.Descendants("test-suite").FirstOrDefault();
+
             var testRun = new TestRun
             {
-                Id = Guid.NewGuid(),
-                TestRunDestinationFilePath = string.Empty,
-                TestRunSourceFilePath = string.Empty,
-                TestRunTimeStart = DateTime.Parse(document.Attribute("start-time").Value),
-                TestRunDuration = decimal.Parse(document.Attribute("duration").Value),
-                TestRunResult = document.Attribute("result").Value,
-                TestEnvironmentMachineName = document.Descendants("environment").FirstOrDefault().Attribute("machine-name").Value,
-                TestSuiteRunDuration = decimal.Parse(testSuite.Attribute("duration").Value),
+                TestRunResult = document.Attribute("result")?.Value,
+                TestEnvironmentMachineName = document.Descendants("environment").FirstOrDefault()?.Attribute("machine-name")?.Value,
                 TestSuiteSettingBrowser = testSuite.Descendants("setting")
-                .FirstOrDefault(x => x.Attribute("name")?.Value == "TestParameters").Attribute("value").Value,
-                TestCases = new List<TestCase>()
+                    .FirstOrDefault(x => x.Attribute("name")?.Value == "TestParameters")?
+                    .Attribute("value")?.Value
             };
+
+            if (DateTime.TryParse(document.Attribute("start-time")?.Value, out var testRunTimeStart))
+            {
+                testRun.TestRunTimeStart = testRunTimeStart;
+            }
+
+            if (decimal.TryParse(document.Attribute("duration")?.Value, out var testRunDuration))
+            {
+                testRun.TestRunDuration = testRunDuration;
+            }
+
+            if (decimal.TryParse(testSuite.Attribute("duration")?.Value, out var testSuiteRunDuration))
+            {
+                testRun.TestSuiteRunDuration = testSuiteRunDuration;
+            }
 
             testRun.TestCases = document.Descendants("test-case").Select(p => new TestCase
             {
-                Id = Guid.NewGuid(),
-                TestRunId = testRun.Id,
-                TestCaseId = p.Attribute("id").Value,
-                TestCaseType = p.Parent.Attribute("type").Value,
-                TestCaseName = p.Attribute("name").Value,
-                TestCaseFullName = p.Attribute("fullname").Value,
-                TestCaseMethodName = p.Attribute("methodname").Value,
-                TestCaseResult = p.Attribute("result").Value,
+                TestCaseId = p.Attribute("id")?.Value,
+                TestCaseType = p.Parent.Attribute("type")?.Value,
+                TestCaseName = p.Attribute("name")?.Value,
+                TestCaseFullName = p.Attribute("fullname")?.Value,
+                TestCaseMethodName = p.Attribute("methodname")?.Value,
+                TestCaseResult = p.Attribute("result")?.Value,
                 TestCaseFailureMessage = p.Descendants("failure").Elements("message").FirstOrDefault()?.Value,
                 TestCaseStackTrace = p.Descendants("failure").Elements("stack-trace").FirstOrDefault()?.Value,
                 TestCaseScreenShotFileName = p.Descendants("attachments").Elements("attachment").Elements("filePath").FirstOrDefault()?.Value
