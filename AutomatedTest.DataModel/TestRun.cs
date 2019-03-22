@@ -28,5 +28,10 @@
         public bool? FalseFailure { get; set; }
 
         public ICollection<TestCase> TestCases { get; set; }
+
+        public TestRun()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

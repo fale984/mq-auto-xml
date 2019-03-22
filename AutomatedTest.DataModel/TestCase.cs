@@ -27,5 +27,10 @@
         public Guid TestRunId { get; set; }
 
         public virtual TestRun TestRun { get; set; }
+
+        public TestCase()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
