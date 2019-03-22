@@ -8,14 +8,12 @@
 
     public class FileProcessing
     {
-        public TestRun ProccessFile(string filePath)
+        public TestRun ProccessFile(FileInfo testRunSourceFilePath)
         {
-            var testRunSourceFilePath = new FileInfo(filePath);
-
-            XElement document = XElement.Load(filePath);
+            XElement document = XElement.Load(testRunSourceFilePath.FullName);
             TestRun testRun = BuildTestRunObjectFromDucument(document);
 
-            testRun.TestRunSourceFilePath = testRunSourceFilePath.ToString();
+            testRun.TestRunSourceFilePath = testRunSourceFilePath.FullName;
             testRun.TestRunDestinationFilePath = $"\\\\devclient1\\c$\\AutomatedTestingFiles\\{testRun.Id}_{testRunSourceFilePath.Name}";
 
             var context = new AutomatedTestContext();

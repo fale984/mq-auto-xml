@@ -2,23 +2,48 @@ namespace AutomatedTest.XmlReader
 {
     using System;
     using System.IO;
-    
+
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Mediquant Result Process");
 
-            var fileName = "results.xml";
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var filePath = Path.Combine(currentDirectory, fileName);
+            string fileName;
 
-            Console.WriteLine("Reading file {0}...", filePath);
+            // Look for file in the args
+            if (args.Length > 0)
+            {
+                fileName = args[0];
+            }
+            else
+            {
+                // Request file name
+                Console.WriteLine("Specify the file to process:");
+                fileName = Console.ReadLine();
+            }
 
-            var program = new FileProcessing.FileProcessing();
-            var testResult = program.ProccessFile(filePath);
+            if (string.IsNullOrEmpty(fileName))
+            {
+                Console.WriteLine("Invalid file name.");
+                Console.ReadKey();
+                return;
+            }
 
-            Console.WriteLine("Processed {0} test cases.", testResult.TestCases.Count);
+            var fileInfo = new FileInfo(fileName);
+            if (fileInfo.Exists)
+            {
+                Console.WriteLine("Reading file {0}...", fileInfo.FullName);
+
+                var processor = new FileProcessing.FileProcessing();
+                var testResult = processor.ProccessFile(fileInfo);
+
+                Console.WriteLine("Processed {0} test cases.", testResult.TestCases.Count);
+            }
+            else
+            {
+                Console.WriteLine("File not found.");
+            }
 
             Console.ReadKey();
         }
