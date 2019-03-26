@@ -33,7 +33,7 @@
             {
                 TestRunResult = document.Attribute("result")?.Value,
                 TestEnvironmentMachineName = document.Descendants("environment").FirstOrDefault()?.Attribute("machine-name")?.Value,
-                TestSuiteSettingBrowser = TestSuiteSettingBrowser.Descendants("item").FirstOrDefault().Attribute("value")?.Value
+                TestSuiteSettingBrowser = TestSuiteSettingBrowser.Descendants("item").FirstOrDefault()?.Attribute("value")?.Value
             };
 
             if (DateTime.TryParse(document.Attribute("start-time")?.Value, out var testRunTimeStart))
